@@ -1,6 +1,7 @@
 import { BASE_URL_API } from "../constants";
+import { characterType } from "../types";
 
-export const getCharacter = async (url: string) => {
+export const getCharacter = async (url: string) : Promise<characterType> => {
   const response = await fetch(`${BASE_URL_API}character/${url}`);
 
   if (!response.ok) {
