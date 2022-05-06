@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import logo from "./logo.svg";
 import styled from "./App.module.scss";
 import { getCharacter } from "./service";
 import { characterType } from "./types";
