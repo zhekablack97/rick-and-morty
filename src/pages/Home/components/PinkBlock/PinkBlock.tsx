@@ -9,7 +9,7 @@ interface IPinkBlock {
 export const PinkBlock: React.FC<IPinkBlock> = ({ title }) => {
   return (
     <Grid className={styles.wrapper}>
-      <Typography as="h1">{title}</Typography>
+      <Typography as="h1" className={styles.white}>{title}</Typography>
     </Grid>
   );
 };
